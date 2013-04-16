@@ -1,0 +1,18 @@
+<!ELEMENT dataset (
+    Department*,
+    Employee*
+)>
+
+<!ELEMENT Department EMPTY>
+<!ATTLIST Department
+    id CDATA #REQUIRED
+    name CDATA #IMPLIED
+    manager_id CDATA #IMPLIED
+>
+
+<!ELEMENT Employee EMPTY>
+<!ATTLIST Employee
+    id CDATA #REQUIRED
+    name CDATA #IMPLIED
+    department_id CDATA #IMPLIED
+>
